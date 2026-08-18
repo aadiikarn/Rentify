@@ -1,0 +1,429 @@
+/* ========================================= */
+/* 🚀 NAVBAR */
+/* ========================================= */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 40px;
+
+  background:
+    rgba(15, 23, 42, 0.65);
+
+  backdrop-filter: blur(14px);
+
+  color: white;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+}
+
+/* ========================================= */
+/* 🔥 LOGO */
+/* ========================================= */
+
+.logo-container {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+.logo-img {
+
+  height: 48px;
+
+  background: white;
+
+  padding: 5px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 15px
+    rgba(34,211,238,0.35);
+
+}
+
+.logo-text {
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  background:
+    linear-gradient(
+      90deg,
+      #22d3ee,
+      #8b5cf6
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color:
+    transparent;
+
+}
+
+.motto {
+
+  font-size: 10px;
+
+  color: #cbd5f5;
+
+  margin-top: -5px;
+
+}
+
+/* ========================================= */
+/* 🔗 LINKS */
+/* ========================================= */
+
+.nav-links {
+
+  display: flex;
+
+  gap: 24px;
+
+  align-items: center;
+
+}
+
+.nav-links a {
+
+  text-decoration: none;
+
+  color: white;
+
+  position: relative;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+
+}
+
+/* ✨ UNDERLINE */
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 0%;
+
+  height: 2px;
+
+  background: #22d3ee;
+
+  left: 0;
+
+  bottom: -5px;
+
+  transition: 0.3s;
+
+}
+
+.nav-links a:hover::after {
+
+  width: 100%;
+
+}
+
+.nav-links a:hover {
+
+  color: #22d3ee;
+
+}
+
+/* 👤 USER */
+
+.user-name {
+
+  color: #cbd5f5;
+
+  font-size: 15px;
+
+}
+
+/* 🚪 LOGOUT */
+
+.logout-btn {
+
+  cursor: pointer;
+
+  color: #f87171;
+
+  transition: 0.3s;
+
+}
+
+.logout-btn:hover {
+
+  color: #ef4444;
+
+}
+
+/* ========================================= */
+/* 🔔 NOTIFICATION */
+/* ========================================= */
+
+.notification-wrapper {
+
+  position: relative;
+
+}
+
+/* 🔔 ICON */
+
+.notification-link {
+
+  position: relative;
+
+  cursor: pointer;
+
+  font-size: 22px;
+
+  transition: 0.3s ease;
+
+}
+
+.notification-link:hover {
+
+  transform: scale(1.12);
+
+}
+
+/* 🔴 BADGE */
+
+.notification-badge {
+
+  position: absolute;
+
+  top: -8px;
+
+  right: -10px;
+
+  background: red;
+
+  color: white;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  box-shadow:
+    0 0 10px red,
+    0 0 20px red;
+
+}
+
+/* 🔥 PANEL */
+
+.notification-panel {
+
+  position: absolute;
+
+  top: 42px;
+
+  right: 0;
+
+  width: 300px;
+
+  background:
+    rgba(20,20,40,0.96);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  z-index: 999;
+
+  box-shadow:
+    0 0 25px
+    rgba(124,58,237,0.45);
+
+  animation: fadeIn 0.3s ease;
+
+}
+
+/* 📝 TITLE */
+
+.notification-panel h4 {
+
+  margin-bottom: 15px;
+
+  color: #22d3ee;
+
+  text-align: center;
+
+}
+
+/* 📩 ITEM */
+
+.notification-item {
+
+  background:
+    rgba(255,255,255,0.08);
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  margin-bottom: 12px;
+
+  transition: 0.3s ease;
+
+}
+
+.notification-item:hover {
+
+  background:
+    rgba(124,58,237,0.25);
+
+  transform: translateY(-2px);
+
+}
+
+/* 🔗 VIEW ALL */
+
+.view-all-btn {
+
+  display: block;
+
+  text-align: center;
+
+  margin-top: 12px;
+
+  padding: 11px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      45deg,
+      #22d3ee,
+      #7c3aed
+    );
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s ease;
+
+}
+
+.view-all-btn:hover {
+
+  transform: scale(1.04);
+
+  box-shadow:
+    0 0 15px #7c3aed,
+    0 0 25px #22d3ee;
+
+}
+
+/* ========================================= */
+/* 📱 RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding: 20px;
+
+  }
+
+  .nav-links {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 18px;
+
+  }
+
+}
+
+/* 📱 MOBILE */
+
+@media (max-width: 600px) {
+
+  .navbar {
+
+    padding: 18px 15px;
+
+  }
+
+  .logo-text {
+
+    font-size: 20px;
+
+  }
+
+  .nav-links {
+
+    gap: 14px;
+
+  }
+
+  .nav-links a {
+
+    font-size: 14px;
+
+  }
+
+  .notification-panel {
+
+    width: 260px;
+
+    right: -40px;
+
+  }
+
+  .user-name {
+
+    display: none;
+
+  }
+
+}

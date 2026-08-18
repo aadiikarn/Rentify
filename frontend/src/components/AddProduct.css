@@ -1,0 +1,319 @@
+/* ========================================= */
+/* 🚀 ADD PRODUCT PAGE */
+/* ========================================= */
+
+.add-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 40px 20px;
+
+}
+
+/* 🔥 FORM */
+
+.add-form {
+
+  width: 100%;
+
+  max-width: 650px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(18px);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  box-shadow:
+    0 0 30px
+    rgba(59,130,246,0.18);
+
+  animation:
+    fadeSlide 0.6s ease;
+
+}
+
+/* 🔥 HEADER */
+
+.add-header {
+
+  text-align: center;
+
+  margin-bottom: 10px;
+
+}
+
+.add-header h1 {
+
+  font-size: 42px;
+
+  margin-bottom: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #38bdf8,
+      #8b5cf6
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color:
+    transparent;
+
+}
+
+.add-header p {
+
+  color: #cbd5e1;
+
+  line-height: 1.7;
+
+}
+
+/* 📸 IMAGE BOX */
+
+.image-upload-box {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 260px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    2px dashed rgba(255,255,255,0.15);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+/* 🖼 PREVIEW */
+
+.preview-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+/* 📸 PLACEHOLDER */
+
+.upload-placeholder {
+
+  font-size: 20px;
+
+  color: #cbd5e1;
+
+}
+
+/* 📂 INPUT */
+
+.image-upload-box input {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  opacity: 0;
+
+  cursor: pointer;
+
+}
+
+/* ✍ INPUTS */
+
+.add-form input,
+.add-form textarea,
+.add-form select {
+
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 16px;
+
+  padding: 16px 18px;
+
+  font-size: 16px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  color: white;
+
+  transition: 0.3s;
+
+  box-sizing: border-box;
+
+}
+
+/* ✨ PLACEHOLDER */
+
+.add-form input::placeholder,
+.add-form textarea::placeholder {
+
+  color: #cbd5e1;
+
+}
+
+/* ✨ FOCUS */
+
+.add-form input:focus,
+.add-form textarea:focus,
+.add-form select:focus {
+
+  background:
+    rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 0 20px
+    rgba(59,130,246,0.35);
+
+}
+
+/* 📝 TEXTAREA */
+
+.add-form textarea {
+
+  min-height: 140px;
+
+  resize: none;
+
+}
+
+/* 🔽 SELECT OPTION */
+
+.add-form select option {
+
+  background: #1e1b4b;
+
+  color: white;
+
+}
+
+/* 🚀 BUTTON */
+
+.add-form button {
+
+  height: 56px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #06b6d4,
+      #8b5cf6
+    );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+
+}
+
+/* ✨ BUTTON HOVER */
+
+.add-form button:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 0 25px
+    rgba(139,92,246,0.45);
+
+}
+
+/* ✨ ANIMATION */
+
+@keyframes fadeSlide {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(30px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+/* 📱 RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .add-form {
+
+    padding: 28px 22px;
+
+  }
+
+  .add-header h1 {
+
+    font-size: 34px;
+
+  }
+
+  .image-upload-box {
+
+    height: 220px;
+
+  }
+
+}
