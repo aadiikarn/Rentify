@@ -154,8 +154,8 @@ function Home() {
   useEffect(() => {
 
     axios.get(
-      "/api/products"
-    )
+  `${process.env.REACT_APP_API_URL}/api/products`
+)
 
     .then((res) => {
 
