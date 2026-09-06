@@ -218,7 +218,7 @@ function AddProduct() {
     // 🚀 SEND DATA
     axios.post(
 
-      "http://localhost:5000/api/products/add",
+      "/api/products/add",
 
       {
 

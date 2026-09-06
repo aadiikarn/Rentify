@@ -154,7 +154,7 @@ function Home() {
   useEffect(() => {
 
     axios.get(
-      "http://localhost:5000/api/products"
+      "/api/products"
     )
 
     .then((res) => {

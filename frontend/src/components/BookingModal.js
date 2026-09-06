@@ -33,7 +33,7 @@ function BookingModal({
     if (!product || !product._id) return;
 
     axios.get(
-      `http://localhost:5000/api/rent/product/${product._id}`
+      `/api/rent/product/${product._id}`
     )
 
     .then((res) => {

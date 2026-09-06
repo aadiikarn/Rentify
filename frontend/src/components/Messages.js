@@ -34,7 +34,7 @@ function Messages() {
   const fetchConversations = () => {
 
     axios.get(
-      "http://localhost:5000/api/messages/all"
+      "/api/messages/all"
     )
 
     .then((res) => {

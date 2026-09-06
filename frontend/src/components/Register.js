@@ -38,7 +38,7 @@ function Register() {
 
     axios.post(
 
-      "http://localhost:5000/api/auth/register",
+      "/api/auth/register",
 
       user
 

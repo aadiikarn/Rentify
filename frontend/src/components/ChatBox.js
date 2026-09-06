@@ -43,7 +43,7 @@ function ChatBox({
   useEffect(() => {
 
     const newSocket =
-      io("http://localhost:5000");
+      io("");
 
     setSocket(newSocket);
 
@@ -119,7 +119,7 @@ function ChatBox({
 
     axios.get(
 
-      `http://localhost:5000/api/messages/${product._id}/${user.email}/${ownerEmail}`
+      `/api/messages/${product._id}/${user.email}/${ownerEmail}`
 
     )
 
@@ -181,7 +181,7 @@ function ChatBox({
 
     axios.post(
 
-      "http://localhost:5000/api/messages/send",
+      "/api/messages/send",
 
       {
 

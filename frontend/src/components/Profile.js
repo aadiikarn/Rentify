@@ -45,7 +45,7 @@ function Profile() {
 
     // 📦 PRODUCTS
     axios.get(
-      "http://localhost:5000/api/products"
+      "/api/products"
     )
 
     .then((res) => {
@@ -62,7 +62,7 @@ function Profile() {
 
       // 🛒 RENTALS
       axios.get(
-        "http://localhost:5000/api/rent"
+        "/api/rent"
       )
 
       .then((rentRes) => {
@@ -226,7 +226,7 @@ function Profile() {
 
     axios.put(
 
-      "http://localhost:5000/api/auth/update",
+      "/api/auth/update",
 
       form
 

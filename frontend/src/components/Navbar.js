@@ -17,7 +17,7 @@ import "./Navbar.css";
 
 // 🔥 SOCKET CONNECTION
 const socket =
-  io("http://localhost:5000");
+  io("");
 
 function Navbar() {
 
@@ -43,7 +43,7 @@ function Navbar() {
     if (!user) return;
 
     axios.get(
-      "http://localhost:5000/api/rent"
+      "/api/rent"
     )
 
     .then((res) => {

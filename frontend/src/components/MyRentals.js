@@ -13,7 +13,7 @@ import "../App.css";
 
 // 🔔 SOCKET CONNECTION
 const socket =
-  io("http://localhost:5000");
+  io("");
 
 function MyRentals() {
 
@@ -87,7 +87,7 @@ function MyRentals() {
   const fetchProducts = () => {
 
     axios.get(
-      "http://localhost:5000/api/products"
+      "/api/products"
     )
 
     .then((res) => {
@@ -111,7 +111,7 @@ function MyRentals() {
   const fetchRentals = () => {
 
     axios.get(
-      "http://localhost:5000/api/rent"
+      "/api/rent"
     )
 
     .then((res) => {
@@ -309,7 +309,7 @@ function MyRentals() {
 
     axios.put(
 
-      `http://localhost:5000/api/rent/${id}`,
+      `/api/rent/${id}`,
 
       {
         status
@@ -365,7 +365,7 @@ function MyRentals() {
 
     axios.delete(
 
-      `http://localhost:5000/api/rent/${id}`
+      `/api/rent/${id}`
 
     )
 
@@ -410,7 +410,7 @@ function MyRentals() {
 
     axios.delete(
 
-      `http://localhost:5000/api/products/${id}`
+      `/api/products/${id}`
 
     )
 

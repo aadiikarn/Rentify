@@ -70,7 +70,7 @@ function ProductDetails() {
   useEffect(() => {
 
     axios.get(
-      "http://localhost:5000/api/products"
+      "/api/products"
     )
 
       .then((res) => {
@@ -115,7 +115,7 @@ function ProductDetails() {
   const fetchReviews = () => {
 
     axios.get(
-      `http://localhost:5000/api/reviews/${id}`
+      `/api/reviews/${id}`
     )
 
       .then((res) => {
@@ -165,7 +165,7 @@ function ProductDetails() {
 
     axios.post(
 
-      "http://localhost:5000/api/reviews/add",
+      "/api/reviews/add",
 
       {
 
@@ -331,7 +331,7 @@ function ProductDetails() {
       const bookingResponse =
         await axios.post(
 
-          "http://localhost:5000/api/rent/rent",
+          "/api/rent/rent",
 
           {
 
@@ -382,7 +382,7 @@ function ProductDetails() {
       const orderResponse =
         await axios.post(
 
-          "http://localhost:5000/api/payment/create-order",
+          "/api/payment/create-order",
 
           {
 
@@ -429,7 +429,7 @@ function ProductDetails() {
         // Delete unpaid booking
         await axios.delete(
 
-          `http://localhost:5000/api/rent/${booking._id}`
+          `/api/rent/${booking._id}`
 
         );
 
@@ -489,7 +489,7 @@ function ProductDetails() {
               const verifyResponse =
                 await axios.post(
 
-                  "http://localhost:5000/api/payment/verify-payment",
+                  "/api/payment/verify-payment",
 
                   {
 
@@ -604,7 +604,7 @@ function ProductDetails() {
 
                 await axios.delete(
 
-                  `http://localhost:5000/api/rent/${booking._id}`
+                  `/api/rent/${booking._id}`
 
                 );
 
